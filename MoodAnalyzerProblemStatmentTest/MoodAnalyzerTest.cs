@@ -9,16 +9,16 @@ namespace MoodAnalyzerProblemStatmentTest
         [TestMethod]    // TC 1.1: Given “I am in Sad Mood” message will Return SAD. 
         public void GivenSadMessage_WhenAnalyse_ShouldReturnSad()
         {
-            string expected = "SAD";                // Arrange
+            string expected = "SAD";                            // Arrange
             string message = "I am in Sad Mood";
             MoodAnalyzer moodAnalyse = new MoodAnalyzer(message);
-            string mood = moodAnalyse.AnalyseMood();                // Act
+            string mood = moodAnalyse.AnalyseMood();            // Act
             Assert.AreEqual(expected, mood);                    // Assert
         }
         [TestMethod]    // TC 1.2: Given “I am in Happy Mood” message will Return HAPPY. 
         public void GivenHappyMessage_WhenAnalyse_ShouldReturnSad()
         {
-            string expected = "HAPPY";              // Arrange
+            string expected = "HAPPY";                          // Arrange
             string message = "I am in HAPPY Mood";
             MoodAnalyzer moodAnalyse = new MoodAnalyzer(message);
             string mood = moodAnalyse.AnalyseMood();            // Act
@@ -27,7 +27,7 @@ namespace MoodAnalyzerProblemStatmentTest
         [TestMethod]    // TC 2.1: Given “I am in HAPPY Mood” and null message will Return HAPPY
         public void GivenNullMessage_WhenAnalyse_ShouldReturnHappy()
         {
-            string expected = "HAPPY";              // Arrange
+            string expected = "HAPPY";                           // Arrange
             string message = null;
             MoodAnalyzer moodAnalyse = new MoodAnalyzer(message);
             string mood = moodAnalyse.AnalyseMood();            // Act
