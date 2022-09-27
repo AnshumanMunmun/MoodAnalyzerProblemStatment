@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoodAnalyzerProblemStatment", "MoodAnalyzerProblemStatment.csproj", "{968C069C-27B3-4663-AA3F-7FC17FEC1D96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{968C069C-27B3-4663-AA3F-7FC17FEC1D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968C069C-27B3-4663-AA3F-7FC17FEC1D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968C069C-27B3-4663-AA3F-7FC17FEC1D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968C069C-27B3-4663-AA3F-7FC17FEC1D96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFCC08D8-AAC4-42E4-8156-0B6D71CC5E3A}
+	EndGlobalSection
+EndGlobal
