@@ -1,10 +1,11 @@
 ﻿namespace MoodAnalyzerProblemStatment
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Mood Analyzer Problem Statment");
+            //MoodAnalyzer moodAnalyzer = new MoodAnalyzer();
+            //moodAnalyzer.AnalyseMood("I am in a Sad Mood");
         }
     }
 }
