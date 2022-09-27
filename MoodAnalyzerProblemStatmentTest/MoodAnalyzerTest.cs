@@ -16,7 +16,7 @@ namespace MoodAnalyzerProblemStatmentTest
             Assert.AreEqual(expected, mood);                    // Assert
         }
         [TestMethod]    // TC 1.2: Given “I am in Happy Mood” message will Return HAPPY. 
-        public void GivenSadMessage_WhenAnalyse_ShouldReturnHappy()
+        public void GivenHappyMessage_WhenAnalyse_ShouldReturnSad()
         {
             string expected = "HAPPY";              // Arrange
             string message = "I am in HAPPY Mood";
