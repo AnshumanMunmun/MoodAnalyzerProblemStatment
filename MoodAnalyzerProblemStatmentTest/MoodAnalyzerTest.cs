@@ -23,15 +23,34 @@ namespace MoodAnalyzerProblemStatmentTest
             MoodAnalyzer moodAnalyse = new MoodAnalyzer(message);
             string mood = moodAnalyse.AnalyseMood();            // Act
             Assert.AreEqual(expected, mood);                    // Assert
-        }
-        [TestMethod]    // TC 2.1: Given “I am in HAPPY Mood” and null message will Return HAPPY
-        public void GivenNullMessage_WhenAnalyse_ShouldReturnHappy()
+        }        
+        [TestMethod]
+        public void GivenNULLMessageWillThrowMoodAnalysisException()    // TC 3.1: Given NULL message will Throw MoodAnalysisException.
         {
-            string expected = "HAPPY";                           // Arrange
             string message = null;
             MoodAnalyzer moodAnalyse = new MoodAnalyzer(message);
-            string mood = moodAnalyse.AnalyseMood();            // Act
-            Assert.AreEqual(expected, mood);                    // Assert
+            try
+            {
+                string mood = moodAnalyse.AnalyseMood();
+            }
+            catch (MoodAnalysisException ex)
+            {
+                Assert.AreEqual("Message is Null", ex.Message);
+            }
+        }
+        [TestMethod]            //TC 3.2: Given Empty message will Throw MoodAnalysisException Indicating Empty Mood.
+        public void GivenEmptyMessageWillThrowMoodAnalysisException()
+        {
+            string message = "Invalid Message";
+            MoodAnalyzer moodAnalyse = new MoodAnalyzer(message);
+            try
+            {
+                string mood = moodAnalyse.AnalyseMood();
+            }
+            catch (MoodAnalysisException ex)
+            {
+                Assert.AreEqual("Message is Empty", ex.Message);
+            }
         }
     }
 }
